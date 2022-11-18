@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<head>
+    <title>product page</title>
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX////lAAfkAAD/+/v1r7DmAAD+9vb2t7j//f74yMn96+v97u7619j1sbL5zs/ylpf74OH3vr/udHbnIiX0qqvmExfoLTDxkpPtaWv84eL85+foNTj4w8TrWlzzoaLqT1HpQ0XsYWPvgIHwh4npPD7zo6TnGBzqSUvwi4zud3nrVVfsX2H62drnJintbW/vfX4WYbsTAAAMpElEQVR4nO1daXeqMBCtgwPiglq3qrhbl+fS///vXhCVhEwgVBF7Tu7HV8VcZjJ78j4+DAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAzuqFi2bQ/rnu84jfIVDcfxXe9YtYte3COwhp7/vTovZuMNAo3td63oVf4GtaE73S1OdxqICKUYGOXe2a8UvdTMqNj+9NAvhbzipAR6naVnFb3arLC85qIfikzNLaSHP17Rq82KYXe/SZFbRO/sFr3cjLDbnx0dchd+OGn/MeVsTWea7ALx9bt/y3Ja3go12QX8SqtW0SvOBm/f06bHjOvM+VvaORp09OkxQf8ci15xNrS3+vSY+MbfRS84IxodfXqM37+/5vpac31+gXr+Mevy8TEAKcJU8+s1/1ziUJ1n4Ncvaz61tVznuuoMqMspggLMvPiaD/UnAO/CsK27A/XNy3DH9moJfvJduC4GmgQZv7reE91/odeBab4r18RZT0NZ2q7Hr9YM4vXwO+8QD9hbLYIIMz39dBdR0ICbN0j1a30dgghrrdTP7vZ5pwO7vJefjmpJgyDzf22dh9kDFHc0jPJefyrqKXWJkF+nofWsczymhWXe60+Fq0EQUMseOnMpJkIsPPBx070EwEpnmQ4R0yIUXrVxUgkCfFXTn1MdUCkXgpM/hWR000JthK2GOxuekXgQ27yawUF++E7lt9EwoPUFLT/sFu4JBykEAQbpD/G2lB6wd/MGuf8qmSDCJN2VuWuaX+/7DUpTy0SCbOHpCuqsKUP1Fvr5kRZr6yioQ5Z0mPzeI5n4SiKIcEhVUBU/mL6Bfn6kEARMTeG7J4V+vgm/j0kCQUwNJSvdEs3v1H3J6jWQRBD6KW660u3R/DZ8cO4WuhkTCAI0U778rdh/yMuvvYYixTlTEmQxWkoMWkaF/eT9u7MBLDItVFcsAFOKoLT9BNG+OH32IRznSyIJSoIIs+QO52XpxNeAL363x2GBbZUzDSXstYogYHIW31bJb8fJz729BCgqq7BUBCFFgO6YTCQBltzXWBB+/RBi3kwUsFSdCUg2fdHSY9/65OzJcRIF4bDPmwoNW1E1BJgnCfA4U/Djk//WRCghFtNWVBHExLr76EzWAQAmXPI/+hQ+hL1CYjd7rJBgJ6HPaS9JfghzTkr2CsRPwTl/OsRaaQliUk3aagKd4K55fjvpM4VU2BQEoZSwY1gASr6TDldBq0xLcpG0CCWlVRThS10J9RUOHvkArbEhPiRZ0hcQpnsvkFDOPJIzC4wfH5nTUYDs7vNvztgdkuBcGR3XPmkDijvSwcdeQy/+uFXeiYZ9Is2F+s1+ky19gD3Hb/hPVS6XEzAf8h1LqVEShJLS3tEZEsCZc/CjL2W1HEDKwEawyYdaCJrgP1UU45ERKArt7RrtJW+Plh96gq9cuIWr2VAdBVWtsDqh+QnF0wHVpYgYEnVWFhflVtWgGrxKJ2jJzjvkxzuILqnE0acphSyzyCGnUHVE9D9hpnCCDtnuFjNAhYPgPk4ZsBHk1SsdlYimpcKG1kkPyDIkznC46ZN9ZIGmcsJSLrNRLVmCgLQNrX7RG3AyjD6jSKPE5xN25iPsIeSQNB7lBcGcLqYNKA+IMOY2jyIKiP8AXS53gq+C7rSfLjyJICpeo0NGl4B8UNdMNKD3X+jQa6levvvk8Sh5FA+BLDbRY7MglMucZAMafUvVF70YBOw987yCPIMAHeoV0jkuwoKzGB7ZJySgNphhtxLmzyPYlQnOqCSmQeW44gYcLeLPUiqsetLSvY7xLZ5FsCllpWQYU6eEg9DjNqBkYNgrGXddRUVEma3YV7+V2hfRhDSDgFQsRSso4CASttWMGVkmvgOT74KuGEzUS7q1gxTGNiOkGQTYEOmLQxUpEA6cP4kb2SADDsQ0VIgwITJz4PaIJ2RSnxLBibwFW1T+KtaYYjrMxLe9qi8tQtwmLKp2+wqWRGtk1zKPNcRnEIBq6pIxNpQ4n1w7x/jh580WHxUiTFTAe9cyblBLnYxHMg+xn6e8oHsiCLI3wb1dcQMy99+sKX/i+kPJHbV2VPMXk8URs129qX5cHm9NAEpe0JbM/+VFzLgQtM13spl6znhDpRJhyphe9MpiBrUBgYbs9KIBWyK4lr7YpWJQYQT4uBX44V40DvQojlyAiuEn+lrMsgeTIew17jTkKJVFYRHfxiMqRmNPj2yR4AEDBYq9o5pChGlTxC3+qULBsXLJgZiyNtOMTjyhJ3JB6mgTU9DIUweV/OgP8E+2HntahIqYmwM3xIMlIce5uhKATbKmH2P5rjzAWqfqikII09hw/PBn+CGhSodsGqkRJ0QWJAt/um0u5q4S8o/4SDpgrPZc+SEVdBkpaD3agIwHfXL557ciFCexYMb/5ci9V+VMsh+fkh/HFugTFgZhG1mR2j3PZ+o5UdRTR3SakboLw+/yFD8V5FXbsRwneBDjmBpVphBc/BTvqoJLQj1DKESoV/KdCj6WNxJV7i9id+uGZjwDiOUxDinAz0jM7m0Wj233rtpsqwyp5si6MK0kbF1h3BXhFLdwy7gRFXshVaLJAHwSeOtCJKhnCIUh1a2jVQVbwXdSaxiL8cfCCfhznKC4ygYhQH6Czbr6EKaeq+RprZHCkGqnRHX+VSNfuIknRAib5c1U1mPdQUAhBqkRAhRiNJYjXUph0ElQzxBS2hL+4CzlaxxckWJkN22p9Bnc6TAZTL8H8VYKzIV1Umcq+DJamEaxpy3Su+8thQizpHxCAQk7kSWQ6hKXt05cqgIH/nkjYhKRWZj7O7AueT7T4qXOMCE9WpyxsSRUOblKuKV5klycmSMFyDVmGoFnZ9azrJW80Kk9yg3DZFT5XcVli1MdhmIyOCLyeD5WrTMFD9RTNwH9R4tQ49yJCIv3zdHwjS13WWSCQleCFOD4vmdYDhFcYpViPTn4Cmf/i1EL3j1HWkftxNjyS1woQplQvlE5De4gO5UzLK9Px2u/Op9mcTWSuxJYvRQhwphbbkMWIHJ9GT+4+UlbPS+gz4FBUvkpCW40r3MPblKOmsEhClhrB5kgN+szCv48yDaKLfury0MfKA524R4o3iKGxAOtfKzepi6JiwS4A+hnvhWIrl08NO5caeItWLxqUyNpQCD6KZtII7jTAg7AOfuQcps2M53HznDZu7AHgnhVqLFSiJwJ8ajhhO1NJVtrHPyix2XTRuDxKUS7edHVW+NN0RARCO6STKi17zu/eusKHX1GK6kyDUqXcAqDDsVxl4jgSK7EsETkJsD2/pdd2C6to8+ar+h2AK/xGx03RVGF3DbkfeAwY3h1R10RcWtds6AFpwPXIQcqA73HPRW5mM3yXGVBQhv2ht6ETx3l8mehzhNu/x67EiYmeUpdF/QpDcQnT8bWJ5cWkhP/NcSr7k0JDe0/LkDlQaLn9DoFDC/7Op7wXbMJi4pinqJGKuuW26mRqviDOL/8q0cPvc7KD5+SU0gQ+/md1xYTxTC0byrGQYKxgmb9gf3SUp6zyXPsV+igweVVNpQTPXC5tdj55ahOQ/nYXK9M4Avr967dlDyde/0QE2V/4GVmGeTICoI5zvwG4NIori8p3s9EsCzNB26GICSIilUP6+d9hILb/cD9s598MWdQk4H5sq1nfJrqUbYXnPLlIn0xuh8u00bsApa4aHqJa7T8xOfk4AkleKrBhg+7vE69YfXCsjNblb2arLXWsfuVfMXua27Ri8pSIIUt9aXGHccQXoaP48l52ey2fdf3/fZ09TXHtOufxcZffrjXLslhMndf0ryEO37rf+rVX1maFA/Buo9d0OU8q33ukacHHwRsX3b07t6KU8b4lv+pfyW3LsH+Cy9guw+qJ5UsvdVYQ/P0CXZeenjSuSlh8u2Lw+n2WaKE9Yuv0LtXF9PKCTV3VdK9IT+J4Pzlx19vFEFjzr/qfPZ1bGUCwZyDURK3CBV7WkWmqvMzTvV3CuCzRrQz4vtW+h/rJqRVr3lArf+QQxTgK0I1ErdRqGw9oJo/+OrrefirAFOudskT3nWNmYOpiu11V7NTKM/E0ADSrnbJGaPrzH32bvMFtVa7ue9jFLVJxTyAQdH3rF5j1Mdi/qHbni7Ph7X0/1Nt3+GOsut940+5ENWy7VHdbTvlcpehkaUqkCfCYiIWdC/MSxAOcOBbXICeFy6dbcS/9T8SZYO9D+abTm9yNWM+aM2YY/vt9McfQXDr7dMOMb4pnM0vPf8fgt8vJgl4Jepv4qUNDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMcsB/0UmhW7mtO6wAAAAASUVORK5CYII=">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+     body
+     {
+         background-image: url("https://static.vecteezy.com/system/resources/previews/001/849/553/original/modern-gold-background-free-vector.jpg");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+     }
+     ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #38444d;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+      
+      li.dropdown {
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {background-color: #f1f1f1;}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      body{
+
+background-color:#B71C1C;
+}
+
+.wrapper{
+
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.card{
+
+height: 420px;
+width: 320px;
+background-color:#48c628;
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+cursor: pointer;
+text-align: center!important;
+
+}
+
+.card::before{
+position: absolute;
+width: 100%;
+height: 100%;
+content: "";
+top:-50%;
+background-color:#f10808;
+transform: skewY(345deg);
+transition:1s ease-in;
+
+}
+
+
+.card:hover::before{
+top:-70%;
+transform: skewY(390deg);
+}
+
+.card .image{
+
+position: absolute;
+
+width: 100%;    
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.card .image img{
+
+max-width: 100%;
+transition: 1s ease-in;
+}
+
+.card:hover .image img{
+
+width: 80%;
+}
+
+.about-product{
+
+position: absolute;
+color: #fff;
+bottom: -50px !important;
+text-align: center;
+left: 20%;
+transition: 1s ease-in;
+}
+
+
+.card:hover .about-product{
+
+bottom: 20px !important;
+}
+
+
+.buy-now{
+
+color: #fff;
+background-color: #ccf808 !important;
+border-color: #09b6fa !important;
+width: 160px;
+margin-top: 20px;
+}
+
+
+.buy-now:focus{
+
+box-shadow: none;
+}
+
+.buy-now:hover{
+color: #fff;
+background-color: #67e840 !important;
+border-color: #e84040 !important;
+
+}
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href=#>Kids Wear</a></li>
+        <li><a href=#>Ladies Wear</a></li>
+        <li><a href=#>Mens Wear</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">About us</a>
+          <div class="dropdown-content">
+            <a href=#>product</a>
+            <a href=#>help us</a>
+          </div>
+        </li>
+      </ul>
+      <p style="font-style: italic;color:crimson;padding-top: 15px;padding-left: 10px;font-size: xx-large;">Welcome user</p>
+      <div class="wrapper">
+
+        <div class="card text-center">
+
+            <div class="image">
+
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUsIwuxDM-hH9BdEu1DVmjtxrJKvULBTEoDg&usqp=CAU" width="300">
+                
+            </div>
+
+            <div class="about-product text-center">
+
+                <h3>Causal Gown </h3>
+
+                <h4>Rs 200.<small>34</small></h4>
+
+                <button class="btn btn-success buy-now">Buy Now</button>
+
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <p style="font-style: italic;color:gold;font-size: x-large;padding-left: 30px;">Casual Gown : it is important that the clothes should be comfortable. Make them select their clothes as well this will be happy wearing what they select</p>
+    <div class="text-center>
+      <iframe  width="560" height="315" ></iframe>  
+    </div>
+    <div class="wrapper">
+
+        <div class="card text-center">
+
+            <div class="image">
+
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvkXAP4AGxP-J-DTrMmc7Ii5lxt5IgxheQFw&usqp=CAU" width="300">
+            </div>
+
+
+            <div class="about-product text-center">
+
+                <h3> Sarees</h3>
+
+                <h4>Rs 1400.<small>00</small></h4>
+
+                <button class="btn btn-success buy-now">Buy Now</button>
+
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <p style="font-style: italic;color:gold;font-size: x-large;padding-left: 30px;"> Sarees : A sari (sometimes also saree or shari) is a women's garment from the Indian subcontinent, that consists of an un-stitched stretch of woven fabric arranged over the body as a robe, with one end tied to the waist, while the other end rests over one shoulder as a stole (shawl), sometimes baring a part of the midriff.</p>
+    <div class="text-center">
+    <iframe  width="560" height="315" ></iframe>
+    </div>
+     <div class="wrapper">
+
+        <div class="card text-center">
+
+            <div class="image">
+
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RF-2rX_TcBv2_Hcf2GYTyQZ0C3SL2C-7sA&usqp=CAU" width="300">
+            </div>
+
+
+            <div class="about-product text-center">
+
+                <h3> Coat</h3>
+
+                <h4>Rs 1000.<small>00</small></h4>
+
+                <button class="btn btn-success buy-now">Buy Now</button>
+
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <p style="font-style: italic;color: gold;font-size: x-large;padding-left: 30px;"> Coat: “If people turn to look at you on the street, you are not well dressed, but either too stiff, too tight, or too fashionable.” .</p>
+    <div class="text-center">
+    <iframe  width="560" height="315" ></iframe>
+    </div>
+     <div class="wrapper">
+
+        <div class="card text-center">
+
+            <div class="image">
+
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnuXheD8iTEw4tQGQu5vyhEeITN7jD-RucsA&usqp=CAU" width="300">
+            </div>
+
+
+            <div class="about-product text-center">
+
+                <h3> Chudithar</h3>
+
+                <h4> Rs 500.<small>00</small></h4>
+
+                <button class="btn btn-success buy-now">Buy Now</button>
+
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    <p style="font-style: italic;color: gold;font-size: x-large;padding-left: 30px;"> Chudithar : "Fashion is about dressing according to what's fashionable. Style is more about being yourself." </p>
+    <div class="text-center">
+    <iframe  width="560" height="315" ></iframe>
+    </div>
+</body>
+</html
